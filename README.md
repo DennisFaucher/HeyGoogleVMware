@@ -25,5 +25,6 @@ Now click on "+ That"
 Search for "Dropbox" and then click Dropbox
 Click "Create a text file"
 This is how I filled out my Dropbox step for the Clone VM applet.
+![Google Step](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/IFTTT%20Clone%20-%20Dropbox.png)
 Click "Create Applet"
 
