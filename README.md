@@ -28,7 +28,7 @@ Search for "Dropbox" and then click Dropbox
 Click "Create a text file"
 This is how I filled out my Dropbox step for the Clone VM applet.
 
-![Google Step](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/IFTTT%20Clone%20-%20Dropbox.png)
+![Dropbox Step](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/IFTTT%20Clone%20-%20Dropbox.png)
 
 Click "Create Applet"
 
@@ -39,3 +39,9 @@ From the example above, the folder /Users/[username]/Dropbox/Clone
 
 ### Create the action in Keyboard Maestro
 (It is assumed that Keyboard Maestro is installed on your Mac)
+Create a new global macro named "Clone VM" You can import the actual macro from this GitHub repository. Here are a few screen shots:
+
+![Macro - Top](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/KM%20-%20Clone%20Top.png)
+
+![Macro - Bottom](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/KM%20-%20Clone%20Bottom.png)
+
