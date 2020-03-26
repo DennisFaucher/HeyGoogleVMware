@@ -32,3 +32,10 @@ This is how I filled out my Dropbox step for the Clone VM applet.
 
 Click "Create Applet"
 
+### Create the folder in DropBox
+(It is assumed that Dropbox is installed on your Mac)
+Create the folder(s) in Dropbox that you referenced in your IFTTT applet(s)
+From the example above, the folder /Users/[username]/Dropbox/Clone
+
+### Create the action in Keyboard Maestro
+(It is assumed that Keyboard Maestro is installed on your Mac)
