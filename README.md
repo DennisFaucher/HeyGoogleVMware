@@ -19,6 +19,7 @@ Click on "+ This"
 Search for "assistant" and then click Google Assitant
 Click "Say a phrase with a text ingredient"
 This is how I filled out my Google Assitant step for the Clone VM applet.
+![Google Step](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/IFTTT%20Clone%20-%20Google.png)
 Click "Create Trigger"
 Now click on "+ That"
 Search for "Dropbox" and then click Dropbox
