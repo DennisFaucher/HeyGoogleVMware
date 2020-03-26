@@ -23,4 +23,6 @@ Click "Create Trigger"
 Now click on "+ That"
 Search for "Dropbox" and then click Dropbox
 Click "Create a text file"
+This is how I filled out my Dropbox step for the Clone VM applet.
+Click "Create Applet"
 
