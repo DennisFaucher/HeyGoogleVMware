@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>583687387.60864103</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Append</key>
+						<true/>
+						<key>Destination</key>
+						<string>/Users/faucherd/Dropbox/KeyboardMaestro/Enter_VM_Results.txt</string>
+						<key>Encoding</key>
+						<string>UTF8</string>
+						<key>Format</key>
+						<string>PlainText</string>
+						<key>Format2</key>
+						<string>PlainText</string>
+						<key>MacroActionType</key>
+						<string>WriteFile</string>
+						<key>Source</key>
+						<string>Text</string>
+						<key>Text</key>
+						<string>%Return%
+%ICUDateTime%EEE, MMM d, yyyy h:mm:ss aaa%
+%Return%</string>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>MacroActionType</key>
+						<string>ReadFile</string>
+						<key>Source</key>
+						<string>~/Dropbox/Enter/VM_Enter.txt</string>
+						<key>Variable</key>
+						<string>VarName</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToCalculation</string>
+						<key>Text</key>
+						<string>TIME</string>
+						<key>UseFormat</key>
+						<false/>
+						<key>Variable</key>
+						<string>VarTime</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>HonourFailureSettings</key>
+						<true/>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>tell application "Keyboard Maestro Engine"
+	set AS_VarName to getvariable "VarName"
+end tell
+
+tell application "Terminal"	activate	tell window 1		do script "/usr/local/bin/prlctl enter " &amp; AS_VarName	end tellend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Append</key>
+						<true/>
+						<key>Destination</key>
+						<string>/Users/faucherd/Dropbox/KeyboardMaestro/Enter_VM_Results.txt</string>
+						<key>Encoding</key>
+						<string>UTF8</string>
+						<key>Format</key>
+						<string>PlainText</string>
+						<key>Format2</key>
+						<string>PlainText</string>
+						<key>MacroActionType</key>
+						<string>WriteFile</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>VarResults</string>
+					</dict>
+					<dict>
+						<key>Append</key>
+						<true/>
+						<key>Destination</key>
+						<string>/Users/faucherd/Dropbox/KeyboardMaestro/Enter_VM_Results.txt</string>
+						<key>Encoding</key>
+						<string>UTF8</string>
+						<key>Format</key>
+						<string>PlainText</string>
+						<key>Format2</key>
+						<string>PlainText</string>
+						<key>MacroActionType</key>
+						<string>WriteFile</string>
+						<key>Source</key>
+						<string>Text</string>
+						<key>Text</key>
+						<string>%Return%
+%ICUDateTime%EEE, MMM d, yyyy h:mm:ss aaa%%Return%================================ %Return%</string>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string></string>
+						<key>MacroActionType</key>
+						<string>File</string>
+						<key>Operation</key>
+						<string>Delete</string>
+						<key>Source</key>
+						<string>~/Dropbox/Enter/VM_Enter.txt</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>606857464.56568301</real>
+				<key>ModificationDate</key>
+				<real>606864335.23457599</real>
+				<key>Name</key>
+				<string>Enter VM</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Interest</key>
+						<dict>
+							<key>Observe</key>
+							<string>Add</string>
+							<key>ObserveWhen</key>
+							<string>IgnorePartial</string>
+							<key>Path</key>
+							<string>~/Dropbox/Enter</string>
+							<key>UID2</key>
+							<string>291CC6C2-D258-43A6-B56F-6055D7227732</string>
+						</dict>
+						<key>MacroTriggerType</key>
+						<string>Folder</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>C7AE05E0-2E67-4E7A-9986-841BB490ECA8</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>6C54B049-8E77-44A2-8432-E4101BEBA002</string>
+		<key>UID</key>
+		<string>AD7A4DF2-EF6A-4A90-B9FE-6D84FD079178</string>
+	</dict>
+</array>
+</plist>
