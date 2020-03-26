@@ -60,3 +60,16 @@ Here are a few screen shots:
 
 ![Macro - Bottom](https://github.com/DennisFaucher/HeyGoogleVMware/blob/master/KM%20-%20Clone%20Bottom.png)
 
+The star of all these VMware macros is the /usr/local/bin/prlctl command which is the CLI to VMware Parallels. 
+
+### Create a Parallels Template
+Choose one of your VMs, choose Clone to template from the File menu. To help Google assitant, name this template one word, all lowercase. 
+
+## Test
+For debugging purposes, I suggest having your VMware Parallels window, and your Dropbox/Clone Finder window visible. Any success/failure messages from Keyboard Maestro will be placed in your Mac Notifications sidebar. I also logged results in a Results.txt file in Dropbox.
+
+Say "Hey Google, Ask VMware to clone [templatename]"
+
+You should see the file VM_Clone.txt show up in Dropbox, the template get cloned to a new VM named [templatename]timestamp, and then VM_Clone.txt get deleted.
+
+Congratulations!
