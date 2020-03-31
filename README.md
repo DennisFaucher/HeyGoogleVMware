@@ -7,7 +7,7 @@ Demo Video: https://youtu.be/enyho_JCdhg
 
 ## Requirements
 * Google Home
-* VMware installation. I used VMware Prallels, but vSphere could just as easily be used.
+* VMware installation. I used VMware Parallels, but vSphere could just as easily be used.
 * IFTTT
 * DropBox
 * Keyboard Maestro for Mac (www.keyboardmaestro.com)
